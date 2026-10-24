@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal Linux setup notes for using rclone with Google Drive.">
+  <title>rclone + Google Drive | Linux setup notes</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202923;
+      --muted: #58645d;
+      --paper: #f7f8f4;
+      --line: #d8ded7;
+      --green: #176c4b;
+      --coral: #c44b36;
+      --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      --serif: Georgia, "Times New Roman", serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    a { color: var(--green); text-underline-offset: 4px; }
+    a:hover { color: var(--coral); }
+    .shell { width: min(100% - 48px, 1000px); margin: 0 auto; }
+    header {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      gap: 24px;
+    }
+    .brand {
+      color: var(--ink);
+      font: 700 15px var(--mono);
+      text-decoration: none;
+    }
+    nav { display: flex; gap: 24px; font: 14px var(--mono); }
+    nav a { color: var(--muted); }
+    main { padding: 76px 0 86px; }
+    .eyebrow { color: var(--green); font: 13px var(--mono); text-transform: uppercase; }
+    h1 {
+      max-width: 760px;
+      margin: 18px 0 22px;
+      font-size: clamp(48px, 8vw, 86px);
+      font-weight: 400;
+      line-height: 1.02;
+    }
+    h1 span { color: var(--green); font-style: italic; }
+    .intro { max-width: 600px; color: var(--muted); font-size: 21px; }
+    .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; margin-top: 34px; }
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      background: var(--green);
+      color: white;
+      font: 14px var(--mono);
+      text-decoration: none;
+    }
+    .button:hover { background: var(--ink); color: white; }
+    .text-link { font: 14px var(--mono); }
+    .rule { width: 100%; height: 1px; margin: 68px 0 30px; background: var(--line); }
+    .note { display: grid; grid-template-columns: 170px 1fr; gap: 22px; max-width: 720px; }
+    .note h2 { margin: 0; font: 13px var(--mono); color: var(--coral); text-transform: uppercase; }
+    .note p { margin: 0; color: var(--muted); font-size: 16px; }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 0 30px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font: 12px var(--mono);
+    }
+    footer a { color: var(--muted); }
+    @media (max-width: 600px) {
+      .shell { width: min(100% - 32px, 1000px); }
+      header { min-height: 68px; align-items: flex-start; flex-direction: column; justify-content: center; gap: 6px; }
+      nav { gap: 18px; font-size: 12px; }
+      main { padding: 56px 0 62px; }
+      .intro { font-size: 18px; }
+      .note { grid-template-columns: 1fr; gap: 8px; }
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <a class="brand" href="index.html">rclone / drive</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </header>
+    <main>
+      <div class="eyebrow">Personal Linux setup notes</div>
+      <h1>Your Drive,<br>your <span>machine.</span></h1>
+      <p class="intro">A personal reference for setting up rclone with Google Drive and managing files from a Linux machine.</p>
+      <div class="actions">
+        <a class="button" href="https://rclone.org/drive/">Read the rclone Drive guide &rarr;</a>
+        <a class="text-link" href="https://github.com/rclone/rclone">rclone source on GitHub</a>
+      </div>
+      <div class="rule"></div>
+      <section class="note" aria-labelledby="about-heading">
+        <h2 id="about-heading">About these notes</h2>
+        <p>This is a personal reference page, not a hosted product or service. It is not affiliated with Google or the rclone project. rclone runs on your own machine; this website does not connect to Google Drive or host or transfer files.</p>
+      </section>
+    </main>
+    <footer>
+      <span>Personal setup notes</span>
+      <span><a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="https://github.com/knyipab/rclone-gdrive-page">GitHub</a></span>
+    </footer>
+  </div>
+</body>
+</html>
